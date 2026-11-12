@@ -1,0 +1,78 @@
+# ATLAS-MERGE: Automated Multi-Objective Model Merging via Task Vector Geometry
+# Default Configuration
+
+system:
+  app_name: "ATLAS-MERGE"
+  version: "1.0.0"
+  description: "Automated Multi-Objective Model Merging via Task Vector Geometry"
+  simulation_mode: true
+  device: "cpu"  # "cpu" or "cuda" (auto-detected if available)
+  random_seed: 42
+
+model_target:
+  intended_base: "Qwen/Qwen2.5-0.5B-Instruct"
+  intended_math_specialist: "GSM8K-Specialist-LoRA"
+  intended_code_specialist: "CodeAlpaca-20K-Specialist-LoRA"
+  status: "Simulated (No downloads required for local research demonstration)"
+  retention_benchmark: "HellaSwag-Proxy"
+
+synthetic_data:
+  tensor_shape: [128, 128]
+  base_mean: 0.0
+  base_std: 0.02
+  task_vector_magnitude: 0.05
+  noise_level: 0.005
+  sparsity_threshold: 0.001
+  functional_blocks:
+    - "Q1 Attention"
+    - "Q1 MLP"
+    - "Q2 Attention"
+    - "Q2 MLP"
+    - "Q3 Attention"
+    - "Q3 MLP"
+    - "Q4 Attention"
+    - "Q4 MLP"
+
+merge_operators:
+  operators:
+    - "BASE_PRESERVE"
+    - "TASK_ARITHMETIC"
+    - "TIES"
+    - "DARE_TIES"
+  discrete_densities: [0.2, 0.4, 0.7, 1.0]
+  discrete_scales: [0.25, 0.5, 0.75, 1.0]
+
+ppo_controller:
+  state_dim: 8
+  hidden_dim: 64
+  num_operators: 4
+  num_densities: 4
+  num_scales: 4
+  gamma: 1.0
+  clip_epsilon: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.01
+  learning_rate: 0.001
+  default_episodes: 25
+  batch_size: 8
+
+reward:
+  chebyshev_rho: 0.05
+  ideal_point: [1.0, 1.0]
+  retention_floor: 0.90
+  retention_penalty_weight: 5.0
+  invalid_candidate_penalty: -10.0
+  default_math_preference: 0.5
+  default_code_preference: 0.5
+
+pareto:
+  reference_point: [0.0, 0.0]
+  max_archive_size: 200
+
+paths:
+  synthetic_data_dir: "data/synthetic"
+  experiment_dir: "data/experiments"
+  checkpoints_dir: "outputs/checkpoints"
+  plots_dir: "outputs/plots"
+  reports_dir: "outputs/reports"
+

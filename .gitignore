@@ -1,0 +1,24 @@
+# Python virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python byte-code and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Streamlit runtime
+.streamlit/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Checkpoint weights & logs (keep structured reports/code, exclude heavy binaries if any)
+*.pt
+*.bin
