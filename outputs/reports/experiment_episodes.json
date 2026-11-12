@@ -1,0 +1,1247 @@
+[
+  {
+    "episode": 1,
+    "candidate_id": "cand_001",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.34212207906913394,
+    "code_proxy": 0.36579967168184935,
+    "retention_proxy": 0.44042669874228785,
+    "reward": -2.609107422985219,
+    "chebyshev_reward": -0.31124091669665843,
+    "retention_penalty": 2.297866506288561,
+    "is_pareto_optimal": true,
+    "hypervolume": 0.1251481441986009,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.4,
+        "scale": 0.25,
+        "op_idx": 3,
+        "density_idx": 1,
+        "scale_idx": 0
+      },
+      "Q1 MLP": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 0
+      },
+      "Q2 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 0
+      },
+      "Q2 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 1.0,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 3
+      },
+      "Q3 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 0
+      },
+      "Q3 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q4 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.7,
+        "scale": 1.0,
+        "op_idx": 3,
+        "density_idx": 2,
+        "scale_idx": 3
+      },
+      "Q4 MLP": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 0
+      }
+    },
+    "policy_loss": 2.3692846298217773e-06,
+    "value_loss": 3.161087989807129,
+    "entropy": 4.143496990203857
+  },
+  {
+    "episode": 2,
+    "candidate_id": "cand_002",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.40939822979017715,
+    "code_proxy": 0.44727379442999393,
+    "retention_proxy": 0.25162463284419684,
+    "reward": -3.5157609202784235,
+    "chebyshev_reward": -0.27388408449940715,
+    "retention_penalty": 3.241876835779016,
+    "is_pareto_optimal": true,
+    "hypervolume": 0.18311309967117512,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 3
+      },
+      "Q1 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q2 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q2 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q3 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q4 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q4 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 1
+      }
+    },
+    "policy_loss": -8.553266525268555e-06,
+    "value_loss": 5.508676528930664,
+    "entropy": 4.143564224243164
+  },
+  {
+    "episode": 3,
+    "candidate_id": "cand_003",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.33058418711623566,
+    "code_proxy": 0.34453210697503345,
+    "retention_proxy": 0.5154352033088023,
+    "reward": -2.240653982545589,
+    "chebyshev_reward": -0.31782999908960047,
+    "retention_penalty": 1.9228239834559884,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.18311309967117512,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 1.0,
+        "scale": 0.75,
+        "op_idx": 0,
+        "density_idx": 3,
+        "scale_idx": 2
+      },
+      "Q1 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q2 Attention": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q2 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q3 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q4 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q4 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 0
+      }
+    },
+    "policy_loss": -1.4007091522216797e-06,
+    "value_loss": 1.8914533853530884,
+    "entropy": 4.142274856567383
+  },
+  {
+    "episode": 4,
+    "candidate_id": "cand_004",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.40946490406699443,
+    "code_proxy": 0.4344572590393855,
+    "retention_proxy": 0.21557650771726455,
+    "reward": -3.6962869553025204,
+    "chebyshev_reward": -0.27416949388884326,
+    "retention_penalty": 3.422117461413677,
+    "is_pareto_optimal": true,
+    "hypervolume": 0.18314206679472958,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q1 MLP": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 2
+      },
+      "Q2 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q2 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q3 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 0
+      },
+      "Q4 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q4 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 3,
+        "density_idx": 2,
+        "scale_idx": 0
+      }
+    },
+    "policy_loss": -2.1010637283325195e-05,
+    "value_loss": 5.4676127433776855,
+    "entropy": 4.140718460083008
+  },
+  {
+    "episode": 5,
+    "candidate_id": "cand_005",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.39665977418427767,
+    "code_proxy": 0.4525423575250918,
+    "retention_proxy": 0.36732091924483745,
+    "reward": -2.94383546339094,
+    "chebyshev_reward": -0.2804400596151269,
+    "retention_penalty": 2.6633954037758127,
+    "is_pareto_optimal": true,
+    "hypervolume": 0.1852318938423067,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q1 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q2 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q2 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q3 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.2,
+        "scale": 1.0,
+        "op_idx": 1,
+        "density_idx": 0,
+        "scale_idx": 3
+      },
+      "Q3 MLP": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q4 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 1,
+        "scale_idx": 2
+      }
+    },
+    "policy_loss": 4.410743713378906e-06,
+    "value_loss": 3.0279650688171387,
+    "entropy": 4.139455318450928
+  },
+  {
+    "episode": 6,
+    "candidate_id": "cand_006",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.272202832970493,
+    "code_proxy": 0.3085215951424365,
+    "retention_proxy": 0.6509740108970362,
+    "reward": -1.5945104183267493,
+    "chebyshev_reward": -0.34938047281193024,
+    "retention_penalty": 1.245129945514819,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.1852318938423067,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 1.0,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 3
+      },
+      "Q1 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 1.0,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 3
+      },
+      "Q2 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 1,
+        "density_idx": 0,
+        "scale_idx": 0
+      },
+      "Q2 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q3 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 0
+      },
+      "Q3 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 2
+      },
+      "Q4 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q4 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 1
+      }
+    },
+    "policy_loss": -7.450580596923828e-07,
+    "value_loss": 0.5215139389038086,
+    "entropy": 4.1377763748168945
+  },
+  {
+    "episode": 7,
+    "candidate_id": "cand_007",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.3324421844777472,
+    "code_proxy": 0.3482226046591852,
+    "retention_proxy": 0.5703397658808018,
+    "reward": -1.9650634586286941,
+    "chebyshev_reward": -0.31676228803270307,
+    "retention_penalty": 1.6483011705959911,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.1852318938423067,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 0
+      },
+      "Q1 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.2,
+        "scale": 0.25,
+        "op_idx": 1,
+        "density_idx": 0,
+        "scale_idx": 0
+      },
+      "Q2 Attention": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q2 MLP": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 3
+      },
+      "Q3 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.2,
+        "scale": 1.0,
+        "op_idx": 0,
+        "density_idx": 0,
+        "scale_idx": 3
+      },
+      "Q3 MLP": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 0
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 0
+      },
+      "Q4 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 2
+      }
+    },
+    "policy_loss": -2.652406692504883e-06,
+    "value_loss": 0.8548569679260254,
+    "entropy": 4.136277198791504
+  },
+  {
+    "episode": 8,
+    "candidate_id": "cand_008",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.46144737403450103,
+    "code_proxy": 0.49744608386080413,
+    "retention_proxy": 0.25868566533920356,
+    "reward": -3.451875649839349,
+    "chebyshev_reward": -0.2453039765353668,
+    "retention_penalty": 3.206571673303982,
+    "is_pareto_optimal": true,
+    "hypervolume": 0.22954518912131425,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q1 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q2 Attention": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q2 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q3 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 3
+      },
+      "Q4 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 1,
+        "scale_idx": 1
+      }
+    },
+    "policy_loss": 1.7583370208740234e-06,
+    "value_loss": 3.67732572555542,
+    "entropy": 4.13430118560791
+  },
+  {
+    "episode": 9,
+    "candidate_id": "cand_009",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.39539342323414906,
+    "code_proxy": 0.4300955763362542,
+    "retention_proxy": 0.45323112110628166,
+    "reward": -2.5155104578622574,
+    "chebyshev_reward": -0.2816660633936654,
+    "retention_penalty": 2.233844394468592,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.22954518912131425,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q1 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q2 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 1.0,
+        "scale": 0.75,
+        "op_idx": 0,
+        "density_idx": 3,
+        "scale_idx": 2
+      },
+      "Q2 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q3 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q4 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q4 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      }
+    },
+    "policy_loss": 2.16066837310791e-06,
+    "value_loss": 1.4330288171768188,
+    "entropy": 4.132287979125977
+  },
+  {
+    "episode": 10,
+    "candidate_id": "cand_010",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.3923961593089298,
+    "code_proxy": 0.40998236995100584,
+    "retention_proxy": 0.3701826064858288,
+    "reward": -2.9328294246848925,
+    "chebyshev_reward": -0.28374245711403673,
+    "retention_penalty": 2.649086967570856,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.22954518912131425,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q1 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 0
+      },
+      "Q2 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 1.0,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 3
+      },
+      "Q2 MLP": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 2
+      },
+      "Q3 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 0.25,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 0
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 3
+      },
+      "Q4 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 0,
+        "scale_idx": 1
+      }
+    },
+    "policy_loss": 2.8908252716064453e-06,
+    "value_loss": 2.0546932220458984,
+    "entropy": 4.129765510559082
+  },
+  {
+    "episode": 11,
+    "candidate_id": "cand_011",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.3849738657070585,
+    "code_proxy": 0.4434351329084993,
+    "retention_proxy": 0.36236870325447285,
+    "reward": -2.974959325908718,
+    "chebyshev_reward": -0.2868028421810818,
+    "retention_penalty": 2.688156483727636,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.22954518912131425,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 2
+      },
+      "Q1 MLP": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 2
+      },
+      "Q2 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q2 MLP": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q3 MLP": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 3
+      },
+      "Q4 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q4 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      }
+    },
+    "policy_loss": -1.4454126358032227e-06,
+    "value_loss": 1.9733104705810547,
+    "entropy": 4.126768112182617
+  },
+  {
+    "episode": 12,
+    "candidate_id": "cand_012",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.3712157137199257,
+    "code_proxy": 0.4016378414607708,
+    "retention_proxy": 0.3973367315622901,
+    "reward": -2.8083871464490695,
+    "chebyshev_reward": -0.29507080426051974,
+    "retention_penalty": 2.5133163421885496,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.22954518912131425,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 2
+      },
+      "Q1 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q2 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q2 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q3 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 1.0,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 3
+      },
+      "Q3 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.2,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 0,
+        "scale_idx": 2
+      },
+      "Q4 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q4 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 1
+      }
+    },
+    "policy_loss": -7.301568984985352e-07,
+    "value_loss": 1.510305404663086,
+    "entropy": 4.124074459075928
+  },
+  {
+    "episode": 13,
+    "candidate_id": "cand_013",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.3231085011233186,
+    "code_proxy": 0.34835096716274316,
+    "retention_proxy": 0.4713841865638651,
+    "reward": -2.4647383299118637,
+    "chebyshev_reward": -0.32165926273118917,
+    "retention_penalty": 2.1430790671806745,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.22954518912131425,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 0,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q1 MLP": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q2 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q2 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.2,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 0,
+        "scale_idx": 1
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q3 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 0
+      },
+      "Q4 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 3,
+        "scale_idx": 1
+      }
+    },
+    "policy_loss": 2.682209014892578e-07,
+    "value_loss": 0.8619270324707031,
+    "entropy": 4.121004581451416
+  },
+  {
+    "episode": 14,
+    "candidate_id": "cand_014",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.4103671984922187,
+    "code_proxy": 0.4766707269199214,
+    "retention_proxy": 0.33802142577007177,
+    "reward": -3.0825333237682284,
+    "chebyshev_reward": -0.27264045261858716,
+    "retention_penalty": 2.8098928711496414,
+    "is_pareto_optimal": false,
+    "hypervolume": 0.22954518912131425,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "DARE_TIES",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q1 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q2 Attention": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 3
+      },
+      "Q2 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q3 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 0
+      },
+      "Q3 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q4 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q4 MLP": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 2
+      }
+    },
+    "policy_loss": -5.811452865600586e-07,
+    "value_loss": 1.7102856636047363,
+    "entropy": 4.117683410644531
+  },
+  {
+    "episode": 15,
+    "candidate_id": "cand_015",
+    "w_math": 0.5,
+    "w_code": 0.5,
+    "math_proxy": 0.443016897805172,
+    "code_proxy": 0.5130469449184863,
+    "retention_proxy": 0.26686554324611034,
+    "reward": -3.420262238798771,
+    "chebyshev_reward": -0.2545899550293225,
+    "retention_penalty": 3.1656722837694486,
+    "is_pareto_optimal": true,
+    "hypervolume": 0.23645663419017815,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q1 MLP": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 2
+      },
+      "Q2 Attention": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q2 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 2
+      },
+      "Q3 MLP": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q4 MLP": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 1
+      }
+    },
+    "policy_loss": -1.2516975402832031e-06,
+    "value_loss": 2.219022274017334,
+    "entropy": 4.114309310913086
+  }
+]

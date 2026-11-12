@@ -1,0 +1,154 @@
+[
+  {
+    "candidate_id": "cand_015",
+    "episode": 15,
+    "math_score": 0.443016897805172,
+    "code_score": 0.5130469449184863,
+    "retention_score": 0.26686554324611034,
+    "reward": -3.420262238798771,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "BASE_PRESERVE",
+        "density": 1.0,
+        "scale": 0.5,
+        "op_idx": 0,
+        "density_idx": 3,
+        "scale_idx": 1
+      },
+      "Q1 MLP": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 0.75,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 2
+      },
+      "Q2 Attention": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q2 MLP": {
+        "operator": "TIES",
+        "density": 1.0,
+        "scale": 0.25,
+        "op_idx": 2,
+        "density_idx": 3,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 0.2,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 0,
+        "scale_idx": 2
+      },
+      "Q3 MLP": {
+        "operator": "DARE_TIES",
+        "density": 1.0,
+        "scale": 1.0,
+        "op_idx": 3,
+        "density_idx": 3,
+        "scale_idx": 3
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q4 MLP": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 1
+      }
+    },
+    "timestamp": "2026-11-12 17:32:03",
+    "metadata": {}
+  },
+  {
+    "candidate_id": "cand_008",
+    "episode": 8,
+    "math_score": 0.46144737403450103,
+    "code_score": 0.49744608386080413,
+    "retention_score": 0.25868566533920356,
+    "reward": -3.451875649839349,
+    "recipe": {
+      "Q1 Attention": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.5,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 1
+      },
+      "Q1 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q2 Attention": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.75,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 2
+      },
+      "Q2 MLP": {
+        "operator": "BASE_PRESERVE",
+        "density": 0.7,
+        "scale": 0.25,
+        "op_idx": 0,
+        "density_idx": 2,
+        "scale_idx": 0
+      },
+      "Q3 Attention": {
+        "operator": "TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 2,
+        "density_idx": 1,
+        "scale_idx": 1
+      },
+      "Q3 MLP": {
+        "operator": "TASK_ARITHMETIC",
+        "density": 0.7,
+        "scale": 0.75,
+        "op_idx": 1,
+        "density_idx": 2,
+        "scale_idx": 2
+      },
+      "Q4 Attention": {
+        "operator": "TIES",
+        "density": 0.7,
+        "scale": 1.0,
+        "op_idx": 2,
+        "density_idx": 2,
+        "scale_idx": 3
+      },
+      "Q4 MLP": {
+        "operator": "DARE_TIES",
+        "density": 0.4,
+        "scale": 0.5,
+        "op_idx": 3,
+        "density_idx": 1,
+        "scale_idx": 1
+      }
+    },
+    "timestamp": "2026-11-12 17:32:03",
+    "metadata": {}
+  }
+]
