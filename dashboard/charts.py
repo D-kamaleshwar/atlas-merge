@@ -83,8 +83,10 @@ def create_geometry_heatmap(profiles: Dict[str, GeometryProfile]) -> go.Figure:
         hoverinfo="text+x+y",
         colorscale="Spectral_r",
         colorbar=dict(
-            title="Value",
-            titlefont=dict(color=TEXT_COLOR),
+            title=dict(
+                text="Value",
+                font=dict(color=TEXT_COLOR)
+            ),
             tickfont=dict(color="#94a3b8"),
         ),
         texttemplate="%{z:.2f}",
